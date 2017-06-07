@@ -30,7 +30,7 @@
 
 当字符串中包含转义字符时，可使用 `r` 前缀避免转义
 
-```
+```python
 >>> r'row string\n'  # 使用前缀 r 定义 raw-string
 'row string\\n'
 >>> print('C:\path\name')  # \n 是一个转义字符，会被转义为一个新行
@@ -49,7 +49,7 @@ C:\path\name
 'show me your code.'
 >>> 'Love ' * 3  # 使用 * 指定重复次数
 'Love Love Love '
->>> 'Love ' * 3 'you'  # 动态生成的字符串不会自动合并
+>>> 'Love ' * 3 'you'  # 动态生成的字符串不会自动合并，而且有语法错误
   File "<stdin>", line 1
     'Love ' * 3 'you'
                     ^
