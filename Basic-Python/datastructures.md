@@ -135,6 +135,45 @@ True
 ['Moe\n', 'Love\n']
 >>> 'Moe\nLove\n'.split('\n')
 ['Moe', 'Love', '']
+>>> # 去除指定字符
+>>> 'MoeLove'.strip('ve')
+'MoeLo'
+>>> # 注意下面的例子，这也是容易被忽视的地方
+>>> 'MoeLove'.strip('Love')  # 前后
+'M'
+>>> 'MoeLove'.lstrip('Love')  # 左侧
+'MoeLove'
+>>> 'MoeLove'.rstrip('Love')  # 右侧
+'M'
+>>> '  MoeLove '.strip()
+'MoeLove'
+>>> '  MoeLove '.lstrip()
+'MoeLove '
+>>> '  MoeLove '.rstrip()
+'  MoeLove'
+>>> 'MoeLoveMoe'.replace('oe', 'ie')
+'MieLoveMie'
+>>> 'MoeLoveMoe'.replace('oe', 'ie', 1)  # 可指定替换次数
+'MieLoveMoe'
+>>> 'MoeLove'.lower()  # 转小写
+'moelove'
+>>> 'MoeLove'.upper()  # 转大写
+'MOELOVE'
+>>> 'MoeLove'.find('o')
+1
+>>> 'MoeLove'.find('o', 2)  # 也可传入第三个参数指定结束位置
+4
+>>> 'MoeLove'.startswith('Moe')
+True
+>>> 'MoeLove'.endswith('ove')
+True
+>>> # 填充
+>>> 'MoeLove'.center(30, '-')
+'-----------MoeLove------------'
+>>> 'MoeLove'.ljust(30, '-')
+'MoeLove-----------------------'
+>>> 'MoeLove'.rjust(30, '-')
+'-----------------------MoeLove'
 
 ```
 

@@ -1,6 +1,6 @@
 # Summary
 
-## Python基础
+## 第一章
 
 * [1.1 介绍](README.md)
 * [1.2 说明](Basic-Python/README.md)
